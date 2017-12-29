@@ -53,9 +53,17 @@ stringify(input).then((output) => {
 })
 ```
 
+### Use your own csv-stringify library
+
+By default, this module uses `csv-stringify` library, but if you prefer to use a different CSV library, you can do so simply by overwriting the `csvStringify` property on the module.
+
+```js
+stringify.csvStringify = yourCustomLibrary;
+```
+
 ## Requirements
 
-This module requires Node v4 or greater
+This module requires NodeJS 8 or greater
 
 ## Tests
 
