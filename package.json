@@ -10,18 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/crookedneighbor/csv-stringify-as-promised.git"
+    "url": "git+ssh://git@github.com/oprogramador/csv-stringify-as-promised.git"
   },
   "keywords": [
     "csv",
     "promise"
   ],
-  "author": "Blade Barringer",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/crookedneighbor/csv-stringify-as-promised/issues"
-  },
-  "homepage": "https://github.com/crookedneighbor/csv-stringify-as-promised#readme",
   "dependencies": {
     "csv-stringify": "^1.0.2"
   },
