@@ -12,30 +12,37 @@ The [`csv-stringify`](http://npmjs.com/csv-stringify) is great, but it doesn't s
 ## Usage
 
 ```js
-'use strict'
+const stringify = require('csv-stringify-as-promised');
+const assert = require('assert');
 
-let stringify = require('csv-stringify-as-promised')
-let assert = require('assert')
-
-let input = [ [ '1', '2', '3', '4' ], [ 'a', 'b', 'c', 'd' ] ]
+const input = [ [ '1', '2', '3', '4' ], [ 'a', 'b', 'c', 'd' ] ];
 
 stringify(input).then((output) => {
-  assert.equal(output, '1,2,3,4\na,b,c,d\n')
+  assert.equal(output,
+`1,2,3,4
+a,b,c,d
+`);
 }).catch((err) => {
-  // handle error
-})
+  assert.fail(err);
+});
 ```
 
 You can pass any [`csv-stringify` options](http://csv.adaltas.com/stringify/) by passing an object as the second argument.
 
 ```js
-let options = { quotedString: true }
+const stringify = require('csv-stringify-as-promised');
+const assert = require('assert');
+const options = { quotedString: true }
+const input = [ [ '1', '2', '3', '4' ], [ 'a', 'b', 'c', 'd' ] ];
 
 stringify(input, options).then((output) => {
-  assert.equal(output, '"1","2","3","4"\n"a","b","c","d"\n')
+  assert.equal(output,
+`"1","2","3","4"
+"a","b","c","d"
+`);
 }).catch((err) => {
-  // handle error
-})
+  assert.fail(err);
+});
 ```
 
 
