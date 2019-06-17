@@ -1,6 +1,6 @@
 const td = require('testdouble');
 const bluebird = require('bluebird');
-const expect = require('chai').expect;
+const { expect } = require('chai');
 const csvStringifyAsPromised = require('../lib');
 
 const input = [
