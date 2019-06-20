@@ -23,7 +23,7 @@
   "devDependencies": {
     "bluebird": "^3.5.5",
     "chai": "^4.2.0",
-    "eslint-config-airbnb-improved": "^4.0.6",
+    "eslint-config-airbnb-improved": "^4.0.7",
     "mocha": "^6.1.4",
     "testdouble": "^3.12.0"
   },
