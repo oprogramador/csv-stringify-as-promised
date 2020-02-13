@@ -18,14 +18,14 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "csv-stringify": "^5.3.3"
+    "csv-stringify": "^5.3.6"
   },
   "devDependencies": {
-    "bluebird": "^3.5.5",
+    "bluebird": "^3.7.2",
     "chai": "^4.2.0",
     "eslint-config-airbnb-improved": "^4.0.13",
     "mocha": "^7.0.1",
-    "testdouble": "^3.12.4"
+    "testdouble": "^3.12.5"
   },
   "engines": {
     "node": ">=8"
