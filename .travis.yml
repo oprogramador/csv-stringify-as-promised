@@ -15,7 +15,6 @@ jobs:
       node_js: 12
       script:
         - npm install
-      before_deploy: 'npm run prepublishOnly'
       deploy:
         provider: npm
         api_key: $NPM_TOKEN
