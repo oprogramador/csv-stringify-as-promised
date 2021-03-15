@@ -30,4 +30,5 @@
   "engines": {
     "node": ">=8"
   }
+  "types": "./lib/index.d.ts"
 }
