@@ -10,8 +10,7 @@ script:
 jobs:
   include:
     - stage: deploy
-      on:
-        branch: master
+      if: branch = master
       node_js: 14
       script:
         - yarn install --non-interactive
